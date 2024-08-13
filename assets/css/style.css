@@ -51,6 +51,25 @@ ul {
     width: auto; /*chiều rộng của nút nhấn nên để auto */
     height: 44px;
 }
+
+.button-outline {
+    background-color: transparent;
+    color: var(--color-main);
+    font-size: 16px;
+    font-weight: 500;
+    width: 164px;
+    height: 48px;
+    border-radius: 57px;
+    border: 1.5px solid var(--color-main);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-outline i {
+    font-size: 18px;
+    margin:  0px 0px 0px 11px;
+}
 /* end button */
 
 /* header */
@@ -112,3 +131,70 @@ ul {
     order: 0;
 }
 /* end header */
+
+/* section one */
+.section-one {
+    background: linear-gradient(102.87deg, #FCEED5 6.43%, #FCEED5 78.33%, #FFE7BA 104.24%);
+    border-radius: 0px 0px 40px 40px;
+    
+    /* tràn nền lên đến header */
+    margin: -100px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
+}
+
+.section-one .inner-wrap {
+    display: flex;
+}
+
+.section-one .inner-content {
+    width: 50%;
+    padding: 80px 76px 0px 0px;
+    position: relative;
+}
+
+.section-one .inner-bg {
+    position: absolute;
+    top: 68px;
+    left: -13px;
+}
+
+.section-one .inner-content .inner-title {
+    margin: 0px 0px 24px 0px;
+    color: var(--color-main);
+    font-weight: 700;
+    position: relative;
+    /* z-index: 999; position khác static mới chỉnh được z-index */
+}
+
+.section-one .inner-content .inner-title .inner-title-main {
+    font-size: 60px;
+}
+
+.section-one .inner-content .inner-title .inner-title-sub {
+    font-size: 46px;
+}
+
+.section-one .inner-desc {
+    color: #242B33;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 0px 34px 0px;
+}
+
+.section-one .inner-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.section-one .inner-image {
+    width: 50%;
+    padding: 0px 74px 0px 0px;
+}
+
+.section-one .inner-image .inner-image-main {
+    width: 100%;
+    height: auto;   
+    display: block; /*thẻ img bị hở 1 khúc ở dưới, không rõ lý do, cứ chuyển về display: block là ok*/
+}
+/* end section one */
