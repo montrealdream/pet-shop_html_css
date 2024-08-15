@@ -15,6 +15,7 @@
 }
 
 body {
+    background-color: #FDFDFD;
     font-family: var(--font-general);
     margin: 0px;
 }
@@ -44,6 +45,7 @@ ul {
     font-size: 16px;
     font-weight: 700;
     padding: 10px 28px;
+    border: 1px solid var(--color-main);
     border-radius: 57px;
     display: inline-flex;
     justify-content: center;
@@ -71,6 +73,38 @@ ul {
     margin:  0px 0px 0px 11px;
 }
 /* end button */
+
+/* box head */
+.box-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 0px 28px 0px;
+}
+.box-head .inner-sub-title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 0px 2px 0px;
+}
+
+.box-head .inner-title {
+    color: var(--color-main);
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.box-head .button-outline {
+    font-size: 14px;
+}
+
+.box-head .button-outline i {
+    margin-left: 16px;
+    font-size: 14px;
+}
+/* end box head */
 
 /* header */
 .header {
@@ -189,6 +223,7 @@ ul {
 }
 
 .section-one .inner-desc {
+    width: 94%;
     color: #242B33;
     font-size: 16px;
     font-weight: 500;
@@ -227,3 +262,160 @@ ul {
     z-index khi đó sẽ bị cái background đang có z-index = 0 đè lên*/
 }
 /* end section one */
+
+/* section two */
+.section-two {
+    padding: 60px 0px;
+}
+
+.section-two .inner-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* end section two */
+
+/* product item */
+.product-item {
+    background-color: #FDFDFD;
+    width: calc((100% - 60px) / 4 );
+    height: 378px;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 28px -2px #00000014;
+}
+
+.product-item .inner-image {
+    width: 264px;
+    height: 264px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0px 0px 8px 0px;
+}
+
+.product-item .inner-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 /1;
+}
+
+.product-item .inner-content {
+    padding: 8px;
+}
+
+.product-item .inner-content .inner-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0px 0px 4px 0px;
+}
+
+.product-item .inner-content .inner-title a {
+    color: var(--color-text-dark);
+}
+
+.product-item .inner-content .inner-info {
+    display: flex;
+    gap: 30px;
+    color: var(--color-text-light);
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0px 0px 4px 0px;
+    position: relative;
+}
+
+.product-item .inner-content .inner-info b {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.product-item .inner-content .inner-info-item::after {
+    content: "";
+    /* mặc định pesudo element có display là inline */
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--color-text-light);
+
+        position: absolute;
+        top: 7px;
+        left: 77px;
+}
+
+.product-item .inner-content .inner-info-item:last-child::after {
+    display: none;
+}
+
+.product-item .inner-content .inner-price {
+    color: var(--color-text-dark);
+    font-size: 14px;
+    font-weight: 700;
+}
+/* end product item */
+
+/* Section three */
+.section-three {
+    margin-bottom: 30px;
+
+}
+.section-three .inner-wrap{
+    background-image: url(../images/section-three-background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-three .inner-image {
+    width: 40%;
+    margin: 36px 0px 0px 20px;
+}
+
+.section-three .inner-image img {
+    width: 100%;
+    height: auto;
+    display: block; /*xóa phần chân của thẻ img*/
+}
+
+
+.section-three .inner-content {
+    width: 41%;
+    text-align: right;
+    padding: 56px 85px 56px 0px;
+}
+
+.section-three .inner-title {
+    margin: 0px 0px 8px 0px;
+    color: var(--color-main);
+    font-weight: 700;   
+}
+
+.section-three .inner-title .inner-title-main {
+    font-size: 52px;
+    margin-bottom: 8px;
+}
+
+.section-three .inner-title .inner-title-sub {
+    font-size: 36px;
+}
+
+.section-three .inner-desc {
+    color: #242B33;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0px 0px 24px 0px;
+}
+
+.section-three .inner-button {
+    display: inline-flex;
+    gap: 18px
+}
+
+.section-three .inner-button .button-dark {
+    font-weight: 500;
+    height: 48px;
+}
+/* End Section three */
