@@ -75,6 +75,8 @@ ul {
 /* header */
 .header {
     padding: 28px 0px;
+    position: relative;
+    z-index: 1; /*Nên để 999 thì sẽ an toàn hơn*/
 }
 
 .header .inner-wrap {
@@ -144,18 +146,30 @@ ul {
 
 .section-one .inner-wrap {
     display: flex;
+    position: relative;
 }
 
+.section-one .inner-content-bg-02 {
+    position: absolute;
+    top: -100px;
+    left: -132px;
+}
 .section-one .inner-content {
     width: 50%;
     padding: 80px 76px 0px 0px;
     position: relative;
 }
 
-.section-one .inner-bg {
+.section-one .inner-content .inner-bg-01 {
     position: absolute;
     top: 68px;
     left: -13px;
+}
+
+.section-one .inner-content .inner-bg-03 {
+    position: absolute;
+    bottom: 0px;
+    right: -58px;
 }
 
 .section-one .inner-content .inner-title {
@@ -187,14 +201,29 @@ ul {
     gap: 18px;
 }
 
+.section-one .inner-button .button {
+    width: auto;
+    height: 48px;
+    font-weight: 500;
+}
+
 .section-one .inner-image {
     width: 50%;
     padding: 0px 74px 0px 0px;
+    position: relative;
+}
+
+.section-one .inner-image .inner-bg-01 {
+    position: absolute; /*z-index =  0*/
+    bottom: 0px;
+    left: -89px;
 }
 
 .section-one .inner-image .inner-image-main {
     width: 100%;
     height: auto;   
     display: block; /*thẻ img bị hở 1 khúc ở dưới, không rõ lý do, cứ chuyển về display: block là ok*/
+    position: relative; /*để position khác static nếu không sẽ không có
+    z-index khi đó sẽ bị cái background đang có z-index = 0 đè lên*/
 }
 /* end section one */
