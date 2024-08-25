@@ -193,6 +193,66 @@ a {
     padding: 0;
     order: 0;
 }
+
+.header .inner-search-mobile {
+    display: none;
+}
+
+.header .inner-menu-mobile {
+    display: none;
+}
+
+/* laptop cỡ nhỏ */
+@media (max-width: 1199.98px) {
+    .header .button {
+        display: none;
+    }
+}
+
+/* máy tính bảng cỡ lớn */
+@media (max-width: 991.98px) {
+    .header .inner-form-search {
+        display: none;
+    }
+
+    .header .inner-search-mobile {
+        display: inline-block;
+        background: transparent;
+        color: var(--color-text-dark);
+        font-size: 22px;
+        border: 0px;
+        padding: 0px;
+        cursor: pointer;
+    }
+}
+
+/* máy tính bảng cỡ nhỏ */
+@media (max-width: 767.98px) {
+    .header {
+        padding: 12.5px 0px;
+    }
+
+    .header .inner-menu-mobile {
+        display: inline-block;
+        color: var(--color-text-dark);
+        font-size: 22px;
+        border: 0px;
+        padding: 0px;
+        cursor: pointer;
+    }
+
+    .header .inner-menu {
+        display: none;
+    }
+
+    .header .inner-wrap {
+        justify-content: space-between;
+    }
+
+    .header .inner-logo img {
+        height: 32px;
+    }
+}
 /* end header */
 
 /* section one */
