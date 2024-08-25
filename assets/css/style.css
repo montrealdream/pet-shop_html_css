@@ -30,6 +30,36 @@ a {
     width: 1180px;
     margin: 0px auto 0px auto;
 }
+
+/* laptop cỡ nhỏ */
+@media (max-width: 1199.98px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* máy tính bảng cỡ lớn */
+@media (max-width: 991.98px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* máy tính bảng cỡ nhỏ */
+@media (max-width: 767.98px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* điện thoại */
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+        padding: 0px 16px 0px 16px;
+    }
+}
+
 /* end container */
 
 /* button */

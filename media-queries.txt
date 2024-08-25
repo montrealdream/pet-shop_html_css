@@ -1,0 +1,21 @@
+- Các điểm ngắt phổ biến
+
+// laptop cỡ nhỏ
+@media (max-width: 1199.98px) {
+
+}
+
+// máy tính bảng cỡ lớn
+@media (max-width: 991.98px) {
+
+}
+
+// máy tính bảng cỡ nhỏ
+@media (max-width: 767.98px) {
+
+}
+
+// điện thoại
+@media (max-width: 575.98px) {
+    
+}
