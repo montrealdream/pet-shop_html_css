@@ -263,10 +263,12 @@ a {
     /* tràn nền lên đến header */
     margin: -100px 0px 0px 0px;
     padding: 100px 0px 0px 0px;
+    overflow: hidden;
 }
 
 .section-one .inner-wrap {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
 
@@ -347,6 +349,88 @@ a {
     display: block; /*thẻ img bị hở 1 khúc ở dưới, không rõ lý do, cứ chuyển về display: block là ok*/
     position: relative; /*để position khác static nếu không sẽ không có
     z-index khi đó sẽ bị cái background đang có z-index = 0 đè lên*/
+}
+
+/* laptop cỡ nhỏ */
+@media (max-width: 1199.98px) {
+    .section-one .inner-content .inner-title {
+        margin-bottom: 20px;
+    }
+
+    .section-one .inner-content .inner-title .inner-title-main{
+        font-size: 52px;
+    }
+    .section-one .inner-content .inner-title .inner-title-sub{
+        font-size: 34px;
+    }
+
+    .section-one .inner-content .inner-desc{
+        font-size: 14px;
+    }
+
+    .section-one .inner-content .inner-bg-03 {
+        height: 50px;
+        left: 81px;
+    }
+}
+
+/* máy tính bảng cỡ lớn */
+@media (max-width: 991.98px) {
+    .section-one {
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .section-one .inner-content {
+        width: 100%;
+        padding-top: 35px;
+        padding-right: 0px;
+    }
+
+    .section-one .inner-image {
+        width: 100%;
+        padding-top: 25px;
+        padding-right: 0px;
+    }
+
+    .section-one .inner-content .inner-bg-03 {
+        display: none;
+    }
+}
+
+/* máy tính bảng cỡ nhỏ */
+@media (max-width: 767.98px) {
+    /*  */
+}
+
+/* điện thoại */
+@media (max-width: 575.98px) {
+    .section-one {
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .section-one .inner-content .inner-title {
+        margin-bottom: 12px;
+    }
+
+    .section-one .inner-content .inner-title .inner-title-main{
+        font-size: 46px;
+    }
+    .section-one .inner-content .inner-title .inner-title-sub{
+        font-size: 28px;
+    }
+
+    .section-one .inner-content .inner-desc{
+        font-size: 12px;
+        margin-bottom: 32px;
+    }
+
+    .section-one .inner-content .inner-bg-01 {
+        display: none;
+    }
+    
+    .section-one .inner-image .inner-bg-01 {
+        bottom: -147px;
+    }
 }
 /* end section one */
 
