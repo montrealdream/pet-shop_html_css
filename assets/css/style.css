@@ -344,6 +344,9 @@ a {
     gap: 18px;
 }
 
+.section-one .inner-button .button-outline {
+    width: 164px;
+}
 .section-one .inner-button .button {
     width: auto;
     height: 48px;
@@ -372,13 +375,14 @@ a {
 
 /* laptop cỡ nhỏ */
 @media (max-width: 1199.98px) {
-    .section-one .inner-content .inner-title {
+    .section-one .inner-content .inner-title{
         margin-bottom: 20px;
     }
 
     .section-one .inner-content .inner-title .inner-title-main{
         font-size: 52px;
     }
+    
     .section-one .inner-content .inner-title .inner-title-sub{
         font-size: 34px;
     }
@@ -387,7 +391,7 @@ a {
         font-size: 14px;
     }
 
-    .section-one .inner-content .inner-bg-03 {
+    .section-one .inner-content .inner-bg-03{
         height: 50px;
         left: 81px;
     }
@@ -467,6 +471,8 @@ a {
 .section-two .inner-button-mobile {
     display: none;
 }
+
+
 /* end section two */
 
 /* product item */
@@ -547,7 +553,6 @@ a {
     font-size: 14px;
     font-weight: 700;
 }
-
 /* máy tính bảng cỡ lớn */
 @media (max-width: 991.98px) {
     .section-two .inner-wrap .product-item {
@@ -588,7 +593,7 @@ a {
     .section-two {
       padding: 40px 0;
     }
-  }
+}
 /* end product item */
 
 /* Section three */
